@@ -42,9 +42,7 @@ int main() {
 	cin >> n >> m;
     for (int i = 0; i < n+m; i++) {
         cin >> x >> y >> z;
-        v = graph[x];
-        v.push_back({z, y});
-        graph[x] = v;
+        graph[x].push_back({z, y});
     }
     int q; string s;
     cin >> q;
